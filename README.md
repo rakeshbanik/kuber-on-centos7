@@ -29,7 +29,6 @@
 *co-dsk-kube-master*   |*192.168.237.209*|*CentOS7*|
 *co-kube1*             |*192.168.237.204*|*CentOS7*|
 *co-kube2*             |*192.168.237.205*|*CentOS7*|
-*co-kube3*             |*192.168.237.210*|*CentOS7*|
 
 
 <a id="deploy"></a>
