@@ -1,7 +1,7 @@
 # kuber-on-centos
 
 
-*This repository is used to create ***Kubernetes Cluster*** using **10** simple steps on ***bare VM's**** 
+*This repository is used to create ***Kubernetes Cluster*** using **10** simple steps on ***bare VM's*** with ***servername*** and ***IP*** already set* 
 
 
 ## Table of Contents
