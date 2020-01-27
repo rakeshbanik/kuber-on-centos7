@@ -10,7 +10,9 @@ cat >>/etc/hosts<<EOF
 192.168.237.209 co-dsk-kube-master
 192.168.237.204 co-kube1
 192.168.237.205 co-kube2
-192.168.237.210 co-kube3
+192.168.0.114 co-dsk-kube-master
+192.168.0.109 co-kube1
+192.168.0.110 co-kube2
 EOF
 
 echo "[TASK 2] Disable SELINUX"

@@ -41,7 +41,9 @@
 *To download and copy the repo to all nodes*
 
 `yum install git -y`
+
 `git clone https://github.com/rakeshbanik/kuber-on-centos7.git`
+
 `chmod 0777 -R kuber-on-centos7`
 
 
@@ -49,7 +51,7 @@
 
 *Check hostnames on all nodes*
 
-` nano /etc/hostname` 
+` cat /etc/hostname` 
 
 
 ## ***Step 3***
@@ -58,7 +60,10 @@
 192.168.237.209 co-dsk-kube-master
 192.168.237.204 co-kube1
 192.168.237.205 co-kube2
-192.168.237.210 co-kube3*
+192.168.0.114 co-dsk-kube-master
+192.168.0.109 co-kube1
+192.168.0.110 co-kube2
+
 
 `kuber-on-centos7/provisioning/prerequisites/install.sh`
 
@@ -91,7 +96,7 @@
 *Before executing the ***below*** script please ***don't forget*** to change the ***kubeadm join !!!!*** in the script. We can get the ***token*** by running the ***Step 6*** command on* ***master node IP***  
 
   
-`cd kuber-on-centos/provisioning/vm-worker`
+`cd ~/kuber-on-centos7/provisioning/helm`
 
 `./install.sh`
 
@@ -129,11 +134,11 @@
 
 `kubectl proxy  --accept-hosts='^*$'`
 
-*Kubectl will make Dashboard available at*
+*Wait for few minutes and Kubectl will make Dashboard available at*
 
  http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/
 
-*To create and account and access the dashboard,*
+*To create and account and access the dashboard, open naother putty/terminal*
 
 `kubectl create serviceaccount dashboard -n default`
 
